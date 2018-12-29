@@ -187,7 +187,7 @@
       
         
         <li class="menu-item menu-item-articles">
-          <a href="/articles/" rel="section">
+          <a href="/Articles/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-bookmark"></i> <br>
             
@@ -197,7 +197,7 @@
       
         
         <li class="menu-item menu-item-pictures">
-          <a href="/pictures/" rel="section">
+          <a href="/Pictures/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-image"></i> <br>
             
@@ -207,21 +207,11 @@
       
         
         <li class="menu-item menu-item-videos">
-          <a href="/videos/" rel="section">
+          <a href="/Videos/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-youtube"></i> <br>
             
             Videos
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-comments">
-          <a href="/comments/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-comments"></i> <br>
-            
-            Comments
           </a>
         </li>
       
@@ -281,16 +271,16 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/12/28/hello-world/" itemprop="url">
+            <a class="post-title-link" href="/2018/12/28/2018-值得期待的冒险/" itemprop="url">
               
-                <span itemprop="name">Hello World</span>
+                <span itemprop="name">2018 | 值得期待的冒险</span>
               
             </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-28T16:22:04-05:00" content="2018-12-28">
+        <time class="post-time" itemprop="dateCreated" datetime="2018-12-28T00:00:00-05:00" content="2018-12-28">
           12-28
         </time>
       </div>
@@ -360,6 +350,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                
+              </div>
+            
 
             
 
@@ -428,6 +427,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
 
 
 
@@ -446,6 +465,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -569,6 +594,28 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'QbQ6KQDhHrBEnLFGGrzf3fgP-gzGzoHsz',
+        appKey: 'q0pD16BvptvEmEHVL56wW1g5',
+        placeholder: 'Type here',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
@@ -584,6 +631,43 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   
